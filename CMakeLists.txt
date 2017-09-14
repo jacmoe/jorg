@@ -3,6 +3,4 @@ project(MyApplication)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/modules/")
 
-set(WITH_GLFWAPPLICATION ON)
-
 add_subdirectory(src)

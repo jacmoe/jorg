@@ -1,5 +1,5 @@
 #include <Magnum/DefaultFramebuffer.h>
-#include <Magnum/Platform/GlfwApplication.h>
+#include <Magnum/Platform/Sdl2Application.h>
 #include <Magnum/Context.h>
 #include <Magnum/Renderer.h>
 #include <Magnum/Version.h>
@@ -26,6 +26,7 @@ void MyApplication::drawEvent() {
     defaultFramebuffer.clear(FramebufferClear::Color);
 
     /* TODO: Add your drawing code here */
+    /* */
 
     swapBuffers();
 }
