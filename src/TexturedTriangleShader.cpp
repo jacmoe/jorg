@@ -42,8 +42,8 @@ TexturedTriangleShader::TexturedTriangleShader() {
     Shader vert{Version::GL330, Shader::Type::Vertex};
     Shader frag{Version::GL330, Shader::Type::Fragment};
 
-    vert.addSource(rs.get("../assets/shaders/TexturedTriangleShader.vert"));
-    frag.addSource(rs.get("../assets/shaders/TexturedTriangleShader.frag"));
+    vert.addSource(rs.get("TexturedTriangleShader.vert"));
+    frag.addSource(rs.get("TexturedTriangleShader.frag"));
 
     CORRADE_INTERNAL_ASSERT_OUTPUT(Shader::compile({vert, frag}));
 

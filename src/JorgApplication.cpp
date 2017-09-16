@@ -27,7 +27,7 @@ class JorgApplication: public Platform::Application {
         Texture2D _texture;
 };
 
-JorgApplication::JorgApplication(const Arguments& arguments): Platform::Application{arguments, Configuration{}.setTitle("JORG - Jacmoes Overengineered Roleplaying Game")} {
+JorgApplication::JorgApplication(const Arguments& arguments): Platform::Application{arguments, Configuration{}.setTitle("Jorg - Jacmoes Overengineered Roleplaying Game")} {
     using namespace Math::Literals;
 
     struct TriangleVertex {
@@ -54,7 +54,7 @@ JorgApplication::JorgApplication(const Arguments& arguments): Platform::Applicat
 
     /* Load the texture */
     const Utility::Resource rs{"textured-triangle-data"};
-    if(!importer->openData(rs.getRaw("../assets/textures/stone.tga")))
+    if(!importer->openData(rs.getRaw("stone.tga")))
         std::exit(2);
 
     /* Set texture data and parameters */
